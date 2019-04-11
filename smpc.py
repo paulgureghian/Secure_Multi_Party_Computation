@@ -22,13 +22,13 @@ def add(x, y):
     assert (len(x) == len(y))
     for i in range(len(x)):
         z.append((x[i] + y[i]) % Q)
-        return z
+    return z
     
 def product(x, w): # w is a plaintext value
     z=[]
     for i in range(len(x)):
         z.append((x[i] * w) % Q)
-        return z
+    return z
     
 ### Encrpyt variables
 var1 = encrpyt(2)
